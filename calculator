@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int choice;
+    cout<<"1.addtion \n 2.substraction \n 3.multiplication \n 4.division \n"<<endl;
+    cout<<"enter your choice : ";
+    cin>>choice;
+    int a,b,c;
+    cout<<"entera a number : \n";
+    cin>>a;
+    cout<<"entera b number : \n";
+    cin>>b;
+    switch (choice)
+{
+    case 1 :
+    {	
+     c = (a + b);
+    cout<<"addtion of 2 numbers is : "<<c;
+    break;
+}
+
+    case 2 :
+    {
+     c = (a - b);
+    cout<<"substraction of 2 numbers is : "<<c;
+    break;
+}
+
+    case 3 :
+{
+     c = (a * b);
+    cout<<"multiplication of 2 numbers is : "<<c;
+    break;
+}
+    case 4 :
+{
+     c = (a / b);
+    cout<<"division of 2 numbers is : "<<c;
+    break;
+}
+    default : cout<<"you had selected in valid statement";
+    
+}
+    return (0);
+
+}
